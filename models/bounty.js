@@ -46,3 +46,5 @@ let bountySchema = new mongoose.Schema({
 
 // Export the model
 module.exports = mongoose.model('Bounty', bountySchema)
+
+// bounty.hunters.push({key: value})
