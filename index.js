@@ -1,6 +1,8 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const MONGO = process.env.MONGO_URI
 
 //<<<<FORM DATA MIDDLEWARE>>>>
 // More here: https://stackoverflow.com/questions/23259168/what-are-express-json-and-express-urlencoded/51844327#:~:text=a.-,express.,use(express.

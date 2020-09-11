@@ -1,8 +1,9 @@
 //set up mongoose connection
 const mongoose = require('mongoose')
 
+
 // Mongo Connection String
-mongoose.connect('mongodb://localhost/bountyhunters', {
+mongoose.connect(process.env.ATLAS_URI, {
     useNewUrlParser: true, 
     useUnifiedTopology: true,
     useFindAndModify: false
